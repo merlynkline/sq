@@ -1,0 +1,94 @@
+%#<!DOCTYPE html>
+% layout 'default', title => 'Susan Quayle - Complementary Healthcare';
+<p>
+I have been a qualified Complementary Therapist
+for many years. During that time I have successfully
+worked with a wide range of people and conditions
+and feel privileged to have been able to
+help so many people within my community.
+</p>
+<p>
+Working on my own children made me realise
+that my interest lay in working with families.
+I have developed my skills and qualifications
+to specialise in the area of fertility, maternity,
+babies and children. I am passionate about
+my work and my clients.
+</p>
+<p>
+I can offer a range of therapies:
+<ul>
+<li>Reflexology, especially:</li>
+<ul>
+    <li>Fertility</li>
+    <li>Pregnancy</li>
+    <li>Labour</li>
+    <li>Post-natal</li>
+    <li>Baby</li>
+    <li>Menopause</li>
+    <li>Menarche</li>
+    <li>Precision</li>
+    <li>Lymphatic drainage</li>
+</ul>
+<li>Aromatherapy</li>
+<li>Pregnancy massage</li>
+<li>Massage</li>
+</ul>
+</p>
+<p>
+I am the founder of
+<a href="http://www.kidsreflex.co.uk/">The Childrens' Reflexology Programme</a>
+and author of the book
+<a href="http://www.jkp.com/uk/the-mouse-s-house.html" target="_blank">The Mouse's House</a>.
+</p>
+<p>
+I live in the South West in Devon and I
+have clinics in Exeter and Dawlish, offering
+treatments by appointment only.
+My Exeter clinic is based at the
+<a href="http://www.enhc.org/" target="_blank">Exeter Natural Health Centre</a>
+in Queens Walk - between Queen Street and
+Gandy Street - a tranquil haven right in
+the heart of the city. The Centre offers
+a relaxing area, with refreshments, where
+you can sit quietly after your treatment
+before returning to the hustle and bustle
+of life.
+My Dawlish clinic is based at
+<a href="http://www.bbeautifuldawlish.co.uk/" target="_blank">B-Beautiful</a>
+on The Strand.
+</p>
+<p>
+If you would like to arrange a treatment
+or find out more about any aspect of what I do
+please send me email on
+<a href="mailto:sue@susanquayle.co.uk">sue@susanquayle.co.uk</a>
+or call 01626 862469 or use the form below.
+%= form_for '/main/contact' => (method => 'POST') => begin
+    <fieldset>
+        <legend>Contact form</legend>
+        <label for="name">Your name:</label>
+        <div class="input-container">
+            <%= text_field 'name', size => '30', id => 'name', autofocus => "autofocus" =%>
+            <%= include 'parts/error', field => 'name' =%>
+        </div>
+        <label for="email">Your email address:</label>
+        <div class="input-container">
+            <%= text_field 'email', size => '30', id => 'email', required => "required" =%>
+            <%= include 'parts/error', field => 'email' =%>
+        </div>
+        <label for="field_message">Message:</label>
+        <div class="input-container">
+            <%= text_area 'message', rows => '10', cols => '45', id => 'field_message', required => "required" =%>
+            <%= include 'parts/error', field => 'message' =%>
+        </div>
+        <label>&nbsp;</label>
+        <div class="input-container">
+            <%= submit_button 'Send', name => 'send' %>
+        </div>
+    </fieldset>
+% end;
+</p>
+<p>
+My therapies can help with all sorts of health problems such as parkinsons disease, pain, backache, diarrhoea, piles, anxiety, heartburn, anaemia, constipation, gestational diabetes, carpal tunnel syndrome, digestive and appetite problems, ME, Chronic Fatigue Syndrome, fatigue, tiredness, IBS, irritable bowel syndrome, pelvic floor problems and headaches. I am especially interested in maternity reflexology and I have found from from experience that reflexology in maternity is very beneficial for preventing and managing many of the common conditions and ailments associated with pregnancy including morning sickness, pre-eclampsia, fatigue, tiredness, nausea, vomiting, diarrhoea, piles, anxiety, heartburn, anaemia, constipation (as might be caused by iron tablets), oedema and gestational diabetes. Reflexology is also a powerful tool during labour and helps with relaxation, managing fear and pain, regulating contractions and general wellbeing.
+</p>
