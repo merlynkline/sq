@@ -1,0 +1,13 @@
+%#<!DOCTYPE html>
+%# Render an error message for a given field
+% my $error_message = {
+%   like                    => 'Please enter something sensible',
+%   required                => 'Please fill in this field',
+% };
+% if(my $error = validation->error($field)) {
+%   $error = $error->[0];
+<div class='field-error-message'>
+    <%= $$error_message{$error} // "Unrecognised error code: '$error'" =%>.
+</div>
+%}
+

@@ -2,9 +2,17 @@
 <html>
     <head>
         <title><%= title %></title>
+        <link rel="shortcut icon" href="<%= url_for '/favicon.ico' %>">
+        <link rel="apple-touch-icon-precomposed" href="<%= url_for '/favicon/favicon-152.png' %>">
+        <meta name="msapplication-TileColor" content="#FFFFFF">
+        <meta name="msapplication-TileImage" content="<%= url_for '/favicon/favicon-144.png' %>">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="<%= url_for '/main.css' %>">
     </head>
-    <body>
-        <img src="/images/logo.jpg" alt="Susan Quayle - Complementary Healthcare">
-        <%= content %>
+    <body class="page-body">
+        <div id="main-body-container">
+            <img src="/images/logo.jpg" alt="Susan Quayle - Complementary Healthcare">
+            <%= content %>
+        </div>
     </body>
 </html>

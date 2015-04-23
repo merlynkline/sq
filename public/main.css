@@ -1,0 +1,126 @@
+html {
+    overflow-y:     scroll;
+}
+html, body {
+    height:         100%;
+}
+body {
+    padding:        0;
+    margin:         0;
+    font-family:    sans-serif;
+    line-height:    140%;
+    background:     #bfb linear-gradient(#bfb, #8a8);
+    font-size:      18px;
+}
+a, a:visited {
+    color:          inherit;
+}
+a img {
+    border:         none;
+}
+#main-body-container {
+    width:          976px;
+    border-style:   solid;
+    border-width:   0 3px;
+    border-color:   #585;
+    color:          #354;
+    margin:         0 auto;
+    background:     white;
+    min-height:     100%;
+    position:       relative;
+    padding:        12px 20px;
+}
+fieldset, legend {
+    border:         2px solid #585;
+    background:     #bde;
+    border-radius:  6px;
+    background:     #bfb linear-gradient(#bfb, #8a8);
+}
+fieldset, legend, .message-box {
+    margin:         20px;
+}
+legend {
+    padding:        2px 4px;
+    border-width:   2px;
+    border-radius:  6px;
+    border-bottom:  none;
+    margin-bottom:  2px;
+}
+label {
+    padding:        8px 0 0;
+    width:          33%;
+    float:          left;
+    text-align:     right;
+    clear:          left;
+    display:        block;
+}
+.field-extra-info {
+    padding:        0;
+    text-align:     left;
+    font-size:      11px;
+    line-height:    110%;
+    clear:          left;
+    text-align:     right;
+}
+.standard-button {
+    border-radius:  4px;
+    font-family:    inherit;
+    color:          inherit;
+    background:     white;
+    text-decoration:    none;
+}
+input, textarea, .standard-button {
+    border-radius:  4px;
+    border:         2px solid #589;
+    margin:         0 4px 4px 4px;
+    font-size:      16px;
+    padding:        4px;
+    font-weight:    bold;
+    font-family:    inherit;
+    color:          inherit;
+}
+input:disabled {
+    color:          #bbb;
+}
+.disabled-button {
+    color:          #bba;
+    border-color:   #bbb;
+    text-decoration: line-through;
+}
+input[type="submit"], input[type="button"], .standard-button {
+    background-image: linear-gradient(#fff, #ddd);
+}
+input[type="submit"]:hover, input[type="button"]:hover, a.standard-button:hover {
+    background-image: linear-gradient(#ccc, #eee);
+}
+input[type="checkbox"] {
+    width:          20px;
+    height:         20px;
+    margin:         4px 8px;
+    color:          inherit;
+}
+input[type="image"] {
+    border: none;
+}
+.input-container {
+    float:          left;
+    margin-top:     4px;
+}
+.field-with-error {
+    background-color: #ede;
+}
+.field-error-message {
+    color:          #b44;
+    font-size:      12px;
+    clear:          left;
+    margin:         0 10px;
+    padding:        0 0 4px 0;
+    line-height:    100%;
+}
+.low-key {
+    font-size:      10px;
+    color:          #ccc;
+    line-height:    140%;
+}
+
+
