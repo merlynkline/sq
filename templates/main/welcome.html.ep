@@ -1,6 +1,6 @@
 %#<!DOCTYPE html>
 % layout 'default', title => 'Susan Quayle - Complementary Healthcare';
-% my $msg = flash 'msg';
+% my $msg = flash('msg') // '';
 % if($msg eq 'message-sent') {
 <p class="message-box">
 Thank you for your interest. Your message has been sent and I will respond as soon as I can.
