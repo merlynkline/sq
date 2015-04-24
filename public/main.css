@@ -30,14 +30,15 @@ a img {
     position:       relative;
     padding:        12px 20px;
 }
-fieldset, legend {
+fieldset, legend, .message-box {
     border:         2px solid #585;
     background:     #bde;
     border-radius:  6px;
     background:     #bfb linear-gradient(#bfb, #8a8);
-}
-fieldset, legend, .message-box {
     margin:         20px;
+}
+.message-box {
+    padding:        20px;
 }
 legend {
     padding:        2px 4px;

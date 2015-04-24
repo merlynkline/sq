@@ -20,6 +20,7 @@ sub contact {
         template    => 'email/contact_form',
         info        => {message => $message},
     );
+    $c->flash(msg => 'message-sent');
     $c->redirect_to('/');
 }
 

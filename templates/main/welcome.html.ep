@@ -1,5 +1,11 @@
 %#<!DOCTYPE html>
 % layout 'default', title => 'Susan Quayle - Complementary Healthcare';
+% my $msg = flash 'msg';
+% if($msg eq 'message-sent') {
+<p class="message-box">
+Thank you for your interest. Your message has been sent and I will respond as soon as I can.
+</p>
+% }
 <p>
 I have been a qualified Complementary Therapist
 for many years. During that time I have successfully
@@ -69,7 +75,7 @@ or call 01626 862469 or use the form below.
         <legend>Contact form</legend>
         <label for="name">Your name:</label>
         <div class="input-container">
-            <%= text_field 'name', size => '30', id => 'name', autofocus => "autofocus" =%>
+            <%= text_field 'name', size => '30', id => 'name' =%>
             <%= include 'parts/error', field => 'name' =%>
         </div>
         <label for="email">Your email address:</label>
