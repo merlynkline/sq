@@ -69,31 +69,7 @@ If you would like to arrange a treatment
 or find out more about any aspect of what I do
 please send me email on
 <a href="mailto:sue@susanquayle.co.uk">sue@susanquayle.co.uk</a>
-or call 01626 862469 or use the form below.
-%= form_for 'sq.contact' => (method => 'POST') => begin
-    <fieldset>
-        <legend>Contact form</legend>
-        <label for="name">Your name:</label>
-        <div class="input-container">
-            <%= text_field 'name', size => '30', id => 'name' =%>
-            <%= include 'parts/error', field => 'name' =%>
-        </div>
-        <label for="email">Your email address:</label>
-        <div class="input-container">
-            <%= text_field 'email', size => '30', id => 'email', required => "required" =%>
-            <%= include 'parts/error', field => 'email' =%>
-        </div>
-        <label for="field_message">Message:</label>
-        <div class="input-container">
-            <%= text_area 'message', rows => '10', cols => '45', id => 'field_message', required => "required" =%>
-            <%= include 'parts/error', field => 'message' =%>
-        </div>
-        <label>&nbsp;</label>
-        <div class="input-container">
-            <%= submit_button 'Send', name => 'send' %>
-        </div>
-    </fieldset>
-% end;
+or call 01626 862469.
 </p>
 <p class="low-key">
 My therapies can help with all sorts of health problems such as parkinsons disease, pain, backache, diarrhoea, piles, anxiety, heartburn, anaemia, constipation, gestational diabetes, carpal tunnel syndrome, digestive and appetite problems, ME, Chronic Fatigue Syndrome, fatigue, tiredness, IBS, irritable bowel syndrome, pelvic floor problems and headaches. I am especially interested in maternity reflexology and I have found from from experience that reflexology in maternity is very beneficial for preventing and managing many of the common conditions and ailments associated with pregnancy including morning sickness, pre-eclampsia, fatigue, tiredness, nausea, vomiting, diarrhoea, piles, anxiety, heartburn, anaemia, constipation (as might be caused by iron tablets), oedema and gestational diabetes. Reflexology is also a powerful tool during labour and helps with relaxation, managing fear and pain, regulating contractions and general wellbeing.
